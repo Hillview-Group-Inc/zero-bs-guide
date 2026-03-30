@@ -1,165 +1,290 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="{{META_DESCRIPTION}}">
-  <meta property="og:title" content="{{QUESTION}} — Zero B.S. Guide">
-  <title>{{QUESTION}} — The Ultimate Zero B.S. Guide</title>
-  <link rel="stylesheet" href="/css/style.css">
-  <!-- FAQ Schema -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [{
-      "@type": "Question",
-      "name": "{{QUESTION}}",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "{{ANSWER}}"
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-0W9M8RV6SC"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
       }
-    }]
-  }
-  </script>
-</head>
-<body>
+      gtag("js", new Date());
 
-<nav class="nav" role="navigation" aria-label="Main navigation">
-  <div class="nav__inner">
-    <a href="/" class="nav__logo">ZERO <span>B.S.</span></a>
-    <ul class="nav__links">
-      <li><a href="/">Home</a></li>
-      <li><a href="/about">About</a></li>
-      <li><a href="/articles">Articles</a></li>
-      <li><a href="/faqs">FAQs</a></li>
-      <li><a href="/contact">Contact</a></li>
-    </ul>
-    <a href="https://books.by/hillview/the-ultimate-zero-bs-guide-t" target="_blank" rel="noopener" class="btn btn-primary btn-sm nav__cta">Get the Book</a>
-    <button class="nav__burger" aria-label="Open menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-</nav>
-<div class="nav__mobile">
-  <ul>
-    <li><a href="/">Home</a></li>
-    <li><a href="/about">About</a></li>
-    <li><a href="/articles">Articles</a></li>
-    <li><a href="/faqs">FAQs</a></li>
-    <li><a href="/contact">Contact</a></li>
-  </ul>
-  <a href="https://books.by/hillview/the-ultimate-zero-bs-guide-t" target="_blank" rel="noopener" class="btn btn-primary" style="width:100%;text-align:center;">Get the Book Now →</a>
-</div>
-
-<!-- FAQ Hero -->
-<header class="article-hero" role="banner">
-  <div class="container">
-    <nav aria-label="Breadcrumb">
-      <div class="article-breadcrumb">
-        <a href="/">Home</a>
-        <span>/</span>
-        <a href="/faqs">FAQs</a>
-        <span>/</span>
-        <span>{{QUESTION}}</span>
-      </div>
-    </nav>
-    <span class="section-label">{{CATEGORY}}</span>
-    <h1 style="font-family:var(--font-serif);font-size:clamp(28px,4vw,52px);line-height:1.15;max-width:720px;margin-bottom:0;">{{QUESTION}}</h1>
-  </div>
-</header>
-
-<!-- FAQ Body -->
-<div class="section section--black">
-  <div class="container">
-    <div style="max-width:760px;">
-
-      <p class="faq-answer">{{ANSWER}}</p>
-
-      <!-- Follow-up Q&As -->
-      <div class="faq-followup">
-        {{FOLLOWUP_HTML}}
-      </div>
-
-      <!-- CTA -->
-      <div class="inline-cta" style="margin-top:40px;">
-        <div class="inline-cta__text">
-          <h3>Get the complete answer — in the book.</h3>
-          <p>Every question like this is answered in full detail inside the Zero B.S. Guide.</p>
-        </div>
-        <a href="https://books.by/hillview/the-ultimate-zero-bs-guide-t" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Get the Book →</a>
-      </div>
-
-      <!-- More FAQs -->
-      <div style="margin-top:60px;padding-top:40px;border-top:1px solid rgba(201,168,76,0.1);">
-        <h2 style="font-family:var(--font-display);font-size:14px;letter-spacing:3px;color:var(--gold);text-transform:uppercase;margin-bottom:24px;">More Questions</h2>
-        <ul style="list-style:none;display:flex;flex-direction:column;gap:14px;">
-          {{OTHER_FAQS}}
-        </ul>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-<!-- Bottom CTA -->
-<section class="section cta-section" aria-labelledby="faq-cta">
-  <div class="container" style="position:relative;z-index:2;text-align:center;">
-    <span class="cta-section__eyebrow">Convinced?</span>
-    <h2 class="section__title" id="faq-cta" style="font-size:clamp(30px,4vw,50px);margin-bottom:16px;">Stop Reading FAQs.<br><em>Get the Book.</em></h2>
-    <p class="cta-section__sub">No more guessing. No more delays. The information you need is already written — and waiting for you.</p>
-    <div class="cta-section__btns">
-      <a href="https://books.by/hillview/the-ultimate-zero-bs-guide-t" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Get the Zero B.S. Guide →</a>
-      <a href="/faqs" class="btn btn-ghost">Back to All FAQs</a>
-    </div>
-  </div>
-</section>
-
-<footer class="footer" role="contentinfo">
-  <div class="container">
-    <div class="footer__inner">
-      <div>
-        <div class="footer__brand-name">ZERO <span>B.S.</span> GUIDE</div>
-        <p class="footer__brand-desc">The Ultimate Zero B.S. Guide — cutting through noise. Real frameworks. Real results.</p>
-        <a href="https://books.by/hillview/the-ultimate-zero-bs-guide-t" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Get the Book →</a>
-      </div>
-      <div>
-        <h3 class="footer__col-title">Navigate</h3>
-        <ul class="footer__links">
+      gtag("config", "G-0W9M8RV6SC");
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="{{META_DESCRIPTION}}" />
+    <meta property="og:title" content="{{QUESTION}} — Zero B.S. Guide" />
+    <title>{{QUESTION}} — The Ultimate Zero B.S. Guide</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "{{QUESTION}}",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "{{ANSWER}}"
+            }
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <nav class="nav" role="navigation" aria-label="Main navigation">
+      <div class="nav__inner">
+        <a href="/" class="nav__logo">ZERO <span>B.S.</span></a>
+        <ul class="nav__links">
           <li><a href="/">Home</a></li>
           <li><a href="/about">About</a></li>
           <li><a href="/articles">Articles</a></li>
           <li><a href="/faqs">FAQs</a></li>
           <li><a href="/contact">Contact</a></li>
         </ul>
+        <a
+          href="https://books.by/hillview/the-ultimate-zero-bs-guide-t"
+          target="_blank"
+          rel="noopener"
+          class="btn btn-primary btn-sm nav__cta"
+          >Get the Book</a
+        >
+        <button
+          class="nav__burger"
+          aria-label="Open menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
       </div>
-      <div>
-        <h3 class="footer__col-title">Top Articles</h3>
-        <ul class="footer__links">
-          <li><a href="/articles/why-most-people-fail-before-they-start">Why People Fail Before They Start</a></li>
-          <li><a href="/articles/the-truth-about-breaking-into-tech">Breaking Into Tech</a></li>
-          <li><a href="/articles/what-no-one-tells-you-about-success">The Truth About Success</a></li>
-        </ul>
+    </nav>
+    <div class="nav__mobile">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/articles">Articles</a></li>
+        <li><a href="/faqs">FAQs</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+      <a
+        href="https://books.by/hillview/the-ultimate-zero-bs-guide-t"
+        target="_blank"
+        rel="noopener"
+        class="btn btn-primary"
+        style="width: 100%; text-align: center"
+        >Get the Book Now →</a
+      >
+    </div>
+
+    <!-- FAQ Hero -->
+    <header class="article-hero" role="banner">
+      <div class="container">
+        <nav aria-label="Breadcrumb">
+          <div class="article-breadcrumb">
+            <a href="/">Home</a>
+            <span>/</span>
+            <a href="/faqs">FAQs</a>
+            <span>/</span>
+            <span>{{QUESTION}}</span>
+          </div>
+        </nav>
+        <span class="section-label">{{CATEGORY}}</span>
+        <h1
+          style="
+            font-family: var(--font-serif);
+            font-size: clamp(28px, 4vw, 52px);
+            line-height: 1.15;
+            max-width: 720px;
+            margin-bottom: 0;
+          "
+        >
+          {{QUESTION}}
+        </h1>
       </div>
-      <div>
-        <h3 class="footer__col-title">Quick Links</h3>
-        <ul class="footer__links">
-          <li><a href="/faqs">FAQs</a></li>
-          <li><a href="/contact">Contact</a></li>
-          <li><a href="https://books.by/hillview/the-ultimate-zero-bs-guide-t" target="_blank" rel="noopener">Buy the Book</a></li>
-        </ul>
+    </header>
+
+    <!-- FAQ Body -->
+    <div class="section section--black">
+      <div class="container">
+        <div style="max-width: 760px">
+          <p class="faq-answer">{{ANSWER}}</p>
+
+          <!-- Follow-up Q&As -->
+          <div class="faq-followup">{{FOLLOWUP_HTML}}</div>
+
+          <!-- CTA -->
+          <div class="inline-cta" style="margin-top: 40px">
+            <div class="inline-cta__text">
+              <h3>Get the complete answer — in the book.</h3>
+              <p>
+                Every question like this is answered in full detail inside the
+                Zero B.S. Guide.
+              </p>
+            </div>
+            <a
+              href="https://books.by/hillview/the-ultimate-zero-bs-guide-t"
+              target="_blank"
+              rel="noopener"
+              class="btn btn-primary btn-sm"
+              >Get the Book →</a
+            >
+          </div>
+
+          <!-- More FAQs -->
+          <div
+            style="
+              margin-top: 60px;
+              padding-top: 40px;
+              border-top: 1px solid rgba(201, 168, 76, 0.1);
+            "
+          >
+            <h2
+              style="
+                font-family: var(--font-display);
+                font-size: 14px;
+                letter-spacing: 3px;
+                color: var(--gold);
+                text-transform: uppercase;
+                margin-bottom: 24px;
+              "
+            >
+              More Questions
+            </h2>
+            <ul
+              style="
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                gap: 14px;
+              "
+            >
+              {{OTHER_FAQS}}
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="footer__bottom">
-      <p class="footer__copyright">© 2025 Hillview Group. All rights reserved.</p>
+
+    <!-- Bottom CTA -->
+    <section class="section cta-section" aria-labelledby="faq-cta">
+      <div
+        class="container"
+        style="position: relative; z-index: 2; text-align: center"
+      >
+        <span class="cta-section__eyebrow">Convinced?</span>
+        <h2
+          class="section__title"
+          id="faq-cta"
+          style="font-size: clamp(30px, 4vw, 50px); margin-bottom: 16px"
+        >
+          Stop Reading FAQs.<br /><em>Get the Book.</em>
+        </h2>
+        <p class="cta-section__sub">
+          No more guessing. No more delays. The information you need is already
+          written — and waiting for you.
+        </p>
+        <div class="cta-section__btns">
+          <a
+            href="https://books.by/hillview/the-ultimate-zero-bs-guide-t"
+            target="_blank"
+            rel="noopener"
+            class="btn btn-primary btn-lg"
+            >Get the Zero B.S. Guide →</a
+          >
+          <a href="/faqs" class="btn btn-ghost">Back to All FAQs</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer" role="contentinfo">
+      <div class="container">
+        <div class="footer__inner">
+          <div>
+            <div class="footer__brand-name">ZERO <span>B.S.</span> GUIDE</div>
+            <p class="footer__brand-desc">
+              The Ultimate Zero B.S. Guide — cutting through noise. Real
+              frameworks. Real results.
+            </p>
+            <a
+              href="https://books.by/hillview/the-ultimate-zero-bs-guide-t"
+              target="_blank"
+              rel="noopener"
+              class="btn btn-primary btn-sm"
+              >Get the Book →</a
+            >
+          </div>
+          <div>
+            <h3 class="footer__col-title">Navigate</h3>
+            <ul class="footer__links">
+              <li><a href="/">Home</a></li>
+              <li><a href="/about">About</a></li>
+              <li><a href="/articles">Articles</a></li>
+              <li><a href="/faqs">FAQs</a></li>
+              <li><a href="/contact">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="footer__col-title">Top Articles</h3>
+            <ul class="footer__links">
+              <li>
+                <a href="/articles/why-most-people-fail-before-they-start"
+                  >Why People Fail Before They Start</a
+                >
+              </li>
+              <li>
+                <a href="/articles/the-truth-about-breaking-into-tech"
+                  >Breaking Into Tech</a
+                >
+              </li>
+              <li>
+                <a href="/articles/what-no-one-tells-you-about-success"
+                  >The Truth About Success</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="footer__col-title">Quick Links</h3>
+            <ul class="footer__links">
+              <li><a href="/faqs">FAQs</a></li>
+              <li><a href="/contact">Contact</a></li>
+              <li>
+                <a
+                  href="https://books.by/hillview/the-ultimate-zero-bs-guide-t"
+                  target="_blank"
+                  rel="noopener"
+                  >Buy the Book</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p class="footer__copyright">
+            © 2025 Hillview Group. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <div class="sticky-mobile-cta">
+      <a
+        href="https://books.by/hillview/the-ultimate-zero-bs-guide-t"
+        target="_blank"
+        rel="noopener"
+        class="btn btn-primary"
+        >Get the Book — No B.S. →</a
+      >
     </div>
-  </div>
-</footer>
 
-<div class="sticky-mobile-cta">
-  <a href="https://books.by/hillview/the-ultimate-zero-bs-guide-t" target="_blank" rel="noopener" class="btn btn-primary">Get the Book — No B.S. →</a>
-</div>
-
-<script src="/js/main.js"></script>
-</body>
+    <script src="/js/main.js"></script>
+  </body>
 </html>
