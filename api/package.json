@@ -1,0 +1,12 @@
+{
+  "name": "zero-bs-guide-azure-api",
+  "version": "1.0.0",
+  "private": true,
+  "main": "contact/index.js",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "nodemailer": "^8.0.3"
+  }
+}

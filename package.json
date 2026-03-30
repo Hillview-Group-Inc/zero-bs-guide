@@ -1,0 +1,13 @@
+{
+  "name": "zero-bs-guide-azure",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Azure Static Web Apps version of the Zero B.S. Guide site",
+  "scripts": {
+    "build": "node scripts/build-static.js",
+    "clean": "node -e \"require('fs').rmSync('dist', { recursive: true, force: true })\""
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
