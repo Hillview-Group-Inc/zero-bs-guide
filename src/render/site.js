@@ -181,6 +181,7 @@ function buildSitemap(baseUrl, articles, faqs) {
   <url><loc>${baseUrl}/articles</loc><lastmod>${today}</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>${baseUrl}/faqs</loc><lastmod>${today}</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>${baseUrl}/contact</loc><lastmod>${today}</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>${baseUrl}/tech-for-immigrants.html</loc><lastmod>${today}</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
 ${articleUrls}
 ${faqUrls}
 </urlset>`;
@@ -271,6 +272,7 @@ function loadSiteSource(projectRoot) {
       home: readTemplate(path.join(viewsDir, 'home.html')),
       about: readTemplate(path.join(viewsDir, 'about.html')),
       contact: readTemplate(path.join(viewsDir, 'contact.html')),
+      techForImmigrants: readTemplate(path.join(viewsDir, 'tech-for-immigrants.html')),
       articlesListing: readTemplate(path.join(viewsDir, 'articles.html')),
       articleTemplate: readTemplate(path.join(viewsDir, 'article-template.html')),
       faqsListing: readTemplate(path.join(viewsDir, 'faqs.html')),

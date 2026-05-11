@@ -45,6 +45,7 @@ function build() {
   writeFile('index.html', templates.home);
   writeFile(path.join('about', 'index.html'), templates.about);
   writeFile(path.join('contact', 'index.html'), templates.contact);
+  writeFile('tech-for-immigrants.html', templates.techForImmigrants);
   writeFile(path.join('articles', 'index.html'), renderArticlesPage(templates, articles));
   writeFile(path.join('faqs', 'index.html'), renderFaqsPage(templates, faqs));
 
